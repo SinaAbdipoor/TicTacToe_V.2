@@ -20,11 +20,13 @@ The main features of this project include:
   * Player vs. Random Bot game;
   * Player vs. learning AI Bot game;
   * Training AI Bot against Random Bot;
-  * Tarining AI Bot against itself;
+  * Training AI Bot against itself;
   * Saving the Custom trained AI Bot in an external file;
   * And loading a trained AI Bot with different difficulties (Easy, Medium, Hard, Custom) from external files.
 
-This prjoect is fully open-source. Anybody is free to use, study, modify, and distribute this project for any purpose. HOWEVER, MY STUDENTS ARE NOT ALLOWED TO COPY ANY PART OF THIS CODE IN THEIR PROJECT. For more information, feel free to read the license file.
+This project is fully open-source. Anybody is free to use, study, modify, and distribute this project for any purpose.
+HOWEVER, MY STUDENTS ARE NOT ALLOWED TO COPY ANY PART OF THIS CODE IN THEIR PROJECT. For more information, feel free to
+read the license file.
 
 By: Sina Abdipoor
 For more information, visit my website: https://sites.google.com/view/sina-abdipoor
