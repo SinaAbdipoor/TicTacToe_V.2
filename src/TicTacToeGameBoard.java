@@ -28,7 +28,7 @@ class TicTacToeGameBoard {
      */
     void setValue(char value, int index) throws IllegalArgumentException, IndexOutOfBoundsException {
         char upperCaseValue = Character.toUpperCase(value);
-        if (!(upperCaseValue == 'X') || upperCaseValue == 'O')
+        if (!(upperCaseValue == 'X' || upperCaseValue == 'O'))
             throw new IllegalArgumentException("The only acceptable labels as input values are: 'X' and 'O'.");
         if (gameBoard[index] != ' ')
             throw new IllegalArgumentException("This index of the game board is already occupied.");
@@ -52,6 +52,14 @@ class TicTacToeGameBoard {
         for (int i = 0; i < gameBoard.length; i++)
             if (gameBoard[i] == ' ') emptySlots.add(i);
         return emptySlots;
+    }
+
+    /**
+     * Resets and clears the game board.
+     */
+    void reset() {
+        for (int i = 0; i < gameBoard.length; i++)
+            gameBoard[i] = ' ';
     }
 
     /**

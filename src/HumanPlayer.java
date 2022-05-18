@@ -20,6 +20,7 @@ class HumanPlayer extends Player {
     int makeMove(TicTacToeGameBoard gameBoard) {
         int index;
         Scanner scanner = new Scanner(System.in);
+        System.out.println(gameBoard + "\n");
         do {
             System.out.print(this + ", it's your turn. Please choose one of the empty slots (1-9) as your next move: ");
             // Making sure the input is a number
