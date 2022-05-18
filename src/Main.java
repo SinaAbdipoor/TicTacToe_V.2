@@ -92,25 +92,25 @@ public class Main {
     private static Game initiateGame(int gameMode) {
         Player player1 = null, player2 = null;
         switch (gameMode) {
-            case 1:
+            case 1 -> {
                 System.out.println("Selected game mode: 1) Play against a friend.");
                 System.out.println("Player 1:");
                 player1 = new HumanPlayer(getPlayerName(), getPlayerLabel());
                 System.out.println("Player 2:");
                 player2 = new HumanPlayer(getPlayerName(), getOppositeLabel(player1.getLabel()));
-                break;
-            case 2:
+            }
+            case 2 -> {
                 System.out.println("Selected game mode: 2) Play against the stupid bot.");
                 System.out.println("Player 1:");
                 player1 = new HumanPlayer(getPlayerName(), getPlayerLabel());
                 System.out.println("Player 2: StupidBot");
                 player2 = new RandomBot(getOppositeLabel(player1.getLabel()));
-                break;
-            case 3:
-                throw new UnsupportedOperationException("Not implemented yet.");
+            }
+            case 3 -> throw new UnsupportedOperationException("Not implemented yet.");
+
 //                break;
-            case 4:
-                throw new UnsupportedOperationException("Not implemented yet.");
+            case 4 -> throw new UnsupportedOperationException("Not implemented yet.");
+
 //                break;
         }
         return new Game(player1, player2);
