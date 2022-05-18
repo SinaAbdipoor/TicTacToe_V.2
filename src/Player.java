@@ -1,3 +1,6 @@
+/**
+ * This abstract class represents a general Tic-Tac-Toe game player.
+ */
 abstract class Player {
 
     private final String name;
