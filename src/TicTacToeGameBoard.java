@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * This class represents the board for the Tic-Tac-Toe game. The board is represented using a char[9], which represents
@@ -13,8 +14,7 @@ class TicTacToeGameBoard {
      */
     TicTacToeGameBoard() {
         gameBoard = new char[9];
-        for (int i = 0; i < gameBoard.length; i++)
-            gameBoard[i] = ' ';
+        Arrays.fill(gameBoard, ' ');
     }
 
     /**
@@ -58,8 +58,7 @@ class TicTacToeGameBoard {
      * Resets and clears the game board.
      */
     void reset() {
-        for (int i = 0; i < gameBoard.length; i++)
-            gameBoard[i] = ' ';
+        Arrays.fill(gameBoard, ' ');
     }
 
     /**
