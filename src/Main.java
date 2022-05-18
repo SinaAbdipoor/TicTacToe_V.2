@@ -14,6 +14,11 @@ public class Main {
         System.out.println(initialInformation());
     }
 
+    /**
+     * Returns a string containing some initial information to be shown at the start.
+     *
+     * @return Initial information.
+     */
     static String initialInformation() {
         return "Welcome to Tic-Tac-Toe!" +
                 "\n\nX | O | " +
