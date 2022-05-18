@@ -95,6 +95,11 @@ class Game {
         else currentPlayer = player1;
     }
 
+    /**
+     * This method runs one round of the Tic-Tac-Toe game and returns the winner.
+     *
+     * @return Winner player, null if it's a draw.
+     */
     Player run() {
         roundNo++;
         gameBoard.reset();
